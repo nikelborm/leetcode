@@ -1,4 +1,5 @@
-// https://leetcode.com/problems/new-sum/description/
+// https://leetcode.com/problems/two-sum/description/
+
 function twoSum(nums: number[], target: number): [number, number] {
   const enumeratedNums = Object.entries(nums);
 
