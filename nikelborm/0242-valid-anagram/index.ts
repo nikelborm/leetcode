@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/valid-anagram/description/
+
 const getCountMap = (str: string) => {
   return [...str].reduce(
     (acc, cur) => ((acc[cur] = (acc[cur] || 0) + 1), acc),

@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/palindrome-number/description/
+
 const getDigit = (x: number, pos: number) => Math.floor(x / 10 ** pos) % 10;
 const getDigitAmount = (x: number) => Math.ceil(Math.log10(x + 1));
 

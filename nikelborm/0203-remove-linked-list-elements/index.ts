@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/remove-linked-list-elements/description/
+
 interface ListNode {
   val: number;
   next: ListNode | null;
