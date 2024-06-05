@@ -1,0 +1,25 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "create new solution",
+      "type": "shell",
+      "command": "solutionFolder=\"./$(git config user.name)/$(printf \"%04d\" ${input:solutionIndex})-${input:solutionName}\"; mkdir -p $solutionFolder; touch $solutionFolder/index.ts; echo -e \"// https://leetcode.com/problems/${input:solutionName}/description/\\n\" > $solutionFolder/index.ts; code $solutionFolder/index.ts",
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "solutionIndex",
+      "description": "number of the leetcode task",
+      "type": "promptString"
+    },
+    {
+      "id": "solutionName",
+      "description": "name of the leetcode task",
+      "type": "promptString"
+    }
+  ]
+}
