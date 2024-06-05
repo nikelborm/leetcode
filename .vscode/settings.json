@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "*.env": "dotenv",
+    "*.ssh_config": "ssh_config",
+    "string": "cpp",
+    "vector": "cpp"
+  }
+}
