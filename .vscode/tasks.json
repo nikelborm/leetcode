@@ -6,8 +6,17 @@
     {
       "label": "create new solution",
       "type": "shell",
-      "command": "solutionFolder=\"./$(git config user.name)/$(printf \"%04d\" ${input:solutionIndex})-${input:solutionName}\"; mkdir -p $solutionFolder; touch $solutionFolder/index.ts; echo -e \"// https://leetcode.com/problems/${input:solutionName}/description/\\n\" > $solutionFolder/index.ts; code $solutionFolder/index.ts",
-      "problemMatcher": []
+      "command": "solutionFolder=\"./$(git config user.name)/$(printf \"%04d\" ${input:solutionIndex})-${input:solutionName}\"; mkdir -p $solutionFolder; touch $solutionFolder/index.ts; echo -e \"// https://leetcode.com/problems/${input:solutionName}/description/\\n\\nimport { deepEqual } from 'assert';\\nimport { it } from 'node:test';\\n\" > $solutionFolder/index.ts; code $solutionFolder/index.ts",
+      "problemMatcher": [],
+      "promptOnClose": false,
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
     }
   ],
   "inputs": [
