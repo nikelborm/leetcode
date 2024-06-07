@@ -4,7 +4,13 @@ import assert, { deepEqual } from 'assert';
 import { it } from 'node:test';
 
 function numUniqueEmails(emails: string[]): number {
-  return 0;
+  const uniqueEmails = new Set();
+  for (const email of emails) {
+    const [userWithComment, domain] = email.split('@');
+    const [user, comment] = userWithComment.split('+')
+    uniqueEmails.add(`${user.replace(/\./g, '')}@${domain}`)
+  }
+  return uniqueEmails.size;
 };
 
 it('pass 1st test case', () => {
