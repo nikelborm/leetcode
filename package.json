@@ -1,0 +1,40 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "Solving LeetCode problems together",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikelborm/leetcode"
+  },
+  "author": "nikelborm <kolya007.klass@gmail.com>",
+  "maintainers": [
+    {
+      "name": "logickoff123",
+      "url": "https://github.com/logickoff123"
+    },
+    {
+      "name": "nikelborm",
+      "url": "https://github.com/nikelborm"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "logickoff123",
+      "url": "https://github.com/logickoff123"
+    },
+    {
+      "name": "nikelborm",
+      "url": "https://github.com/nikelborm"
+    }
+  ],
+  "homepage": "https://github.com/nikelborm/leetcode#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^20.14.2",
+    "typescript": "^5.4.5"
+  }
+}
