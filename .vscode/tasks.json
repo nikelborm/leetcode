@@ -6,7 +6,7 @@
     {
       "label": "create new solution",
       "type": "shell",
-      "command": "solutionFolder=\"./$(git config user.name)/$(printf \"%04d\" ${input:solutionIndex})-${input:solutionName}\"; mkdir -p $solutionFolder; touch $solutionFolder/index.ts; echo -e \"// https://leetcode.com/problems/${input:solutionName}/description/\\n\\nimport { deepEqual } from 'assert';\\nimport { it } from 'node:test';\\n\\n\\nit('case 1', () => {\\n  \\n})\\n\\nit('case 2', () => {\\n  \\n})\" > $solutionFolder/index.ts; code $solutionFolder/index.ts",
+      "command": "solutionFolder=\"./$(git config user.name)/$(printf \"%04d\" ${input:solutionIndex})-${input:solutionName}\"; mkdir -p $solutionFolder; touch $solutionFolder/index.ts; echo -e \"// https://leetcode.com/problems/${input:solutionName}/description/\\n\\nimport { deepEqual, equal } from 'assert';\\nimport { it } from 'node:test';\\n\\n\\n\\nit('case 1', () => {\\n  \\n})\\n\\nit('case 2', () => {\\n  \\n})\" > $solutionFolder/index.ts; code $solutionFolder/index.ts",
       "problemMatcher": [],
       "promptOnClose": false,
       "presentation": {
