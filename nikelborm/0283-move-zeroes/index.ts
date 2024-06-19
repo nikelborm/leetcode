@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/move-zeroes/description/
 
-import { deepEqual, equal } from 'assert';
+import { deepEqual } from 'assert';
 import { it } from 'node:test';
 
 // Do not return anything, modify numbers in-place instead.
