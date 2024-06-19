@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/maximum-average-subarray-i/description/
 
-import { deepEqual, equal } from 'assert';
+import { equal } from 'assert';
 import { it } from 'node:test';
 
 function findMaxAverage(numbers: number[], k: number): number {
